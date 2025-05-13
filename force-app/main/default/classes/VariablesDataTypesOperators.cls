@@ -250,12 +250,12 @@ public with sharing class VariablesDataTypesOperators {
      * @return The temperature in Celsius equivalent to the given Fahrenheit temperature.
      */
     public static Double convertFahrenheitToCelsius(Double fahrenheit) {
-        final Double subtractFactor = 32.0;
-        final Double multiplyFactor = 5.0;
-        final Double divideFactor= 9.0;
-        Double celcius;
-        celcius = (fahrenheit - subtractFactor) / divideFactor * multiplyFactor;
-        return celcius; // Replace null with the variable you used to store the result
+        final Double SUBTRACT_FACTOR = 32.0;
+        final Double MULTIPLY_FACTOR = 5.0;
+        final Double DIVIDE_FACTOR = 9.0;
+        
+        Double celcius = (fahrenheit - SUBTRACT_FACTOR ) * MULTIPLY_FACTOR / DIVIDE_FACTOR ;
+        return celcius;
     }
 
     /**
